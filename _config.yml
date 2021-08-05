@@ -1,0 +1,29 @@
+title: Richard's random blog
+description: > # this means to ignore newlines until "baseurl:"
+  Richard's random blog contains writings about everything math, code and science related. Never a dull moment!
+permalink: ':title/'
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+site-twitter: #if your site has a twitter account, enter it here
+
+# Author Settings
+author: Richard # add your name
+author-img: richard.png # add your photo
+about-author: I am a Computer Scientist and a Mathematician. Interested in everything sciency. # add description
+social-twitter: # add your Twitter handle
+social-facebook: # add your Facebook handle
+social-github: RichardPoes # add your Github handle
+social-linkedin: richard-d-9a9239143 # add your Linkedin handle
+social-email: richard.poes@outlook.com # add your Email address
+
+# Build Settings
+highlighter: rouge
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jemoji
+
+paginate: 8
+paginate_path: "/page/:num"
+
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
