@@ -1,6 +1,7 @@
 ---
 layout: post
-title: Hilbert's 10<sup>th</sup> Problem - Part 1
+title: Hilbert's 10th Problem - Part 1
+html-title: Hilbert's 10<sup>th</sup> Problem - Part 1
 date: 2021-08-14 19:12:20 +0300
 description: An introduction to Hilbert's 10th Problem and Diophantine equations
 img: Blog2.jpg # Add image post (optional)
