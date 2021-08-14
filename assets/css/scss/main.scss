@@ -39,7 +39,7 @@ img + em {
 }
 
 blockquote {
-  border-left: 5px solid #000;
+  border-left: 5px solid $style-red;
   padding-left: 1.1rem;
   margin-left: 1rem;
   font-style: italic;
@@ -62,6 +62,14 @@ pre {
     word-wrap: break-word;
     word-break: break-all;
   }
+}
+
+summary {
+  cursor: pointer;
+}
+
+summary::marker {
+  color: $style-red;
 }
 
 table {
@@ -136,6 +144,7 @@ table tfoot td {
   clear: both;
 }
 
+
 /* - - - - - - - - - - Home Page Styles - - - - - - - - - - */
 @import 'parts/home-page';
 
@@ -147,3 +156,6 @@ table tfoot td {
 
 /* - - - - - - - - - - Media Styles - - - - - - - - - - */
 @import 'media';
+
+/* - - - - - - - - - - Math Environment Styles - - - - - - - - - - */
+@import 'environments';

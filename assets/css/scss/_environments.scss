@@ -1,0 +1,32 @@
+.definition {
+    color: $style-blue;
+    display: block;
+    font-weight: bold;
+  }
+
+.example {
+    color: $style-yellow;
+    display: block;
+    font-weight: bold;
+}
+
+.lemma {
+    color: $style-red;
+    display: block;
+    font-weight: bold;
+}
+
+.theorem {
+    color: $style-red;
+    display: block;
+    font-weight: bold;
+}
+
+.keyword-definition {
+    text-decoration: underline;
+    color: $style-blue
+}
+
+.solution-summary {
+    font-weight: bold;
+}

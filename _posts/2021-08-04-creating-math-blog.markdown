@@ -17,7 +17,7 @@ This post is divided into two parts: installation and customization, describing 
 First I followed the tutorial on [GitHub Pages](https://guides.github.com/features/pages/ "GitHub Pages Tutorial") to initialize my repository.
 After some playing around I found [this template](https://github.com/artemsheludko/flexible-jekyll "GitHub Pages Template").
 I cleared my whole repository and filled it with the unzipped files of the aforementioned template. It is then important to set 
-```YAML
+``` yaml
 baseurl: "" # the subpath of your site, e.g. /blog```
 ```
 Because I did not have this subpath by default; this had to be directly on [richardpoes.github.io](richardpoes.github.io), for now.
@@ -34,7 +34,7 @@ I wanted to be able to render
 \\[ A = \begin{pmatrix} a_{11} & \dots & a_{n1} \\\\ \vdots & \ddots & \vdots \\\\ a_{1m} & \dots & a_{nm} \end{pmatrix}, \\]
 without a hassle, that is, without escaping too much characters, staying true to the \\(\LaTeX\\) syntax.
 However, I had to write
-```Latex
+``` latex
 \\[ A = \begin{pmatrix} a_{11} & \dots & a_{n1} \\\\ \vdots & \ddots & \vdots \\\\ a_{1m} & \dots & a_{nm} \end{pmatrix}, \\]
 ```
 It turned out the problem was caused by the line
