@@ -103,7 +103,16 @@ Looking on the internet there are already multiple approaches to this problem, t
 $$x^3 + y^3 + z^3 = 3$$
 is also Diophantine. 
 This equation is interesting because it has been conjectured to have an infinite set of solutions, yet only two have been found.
-Those are $$(1, 1, 1)$$ and $$(569\ 936\ 821\ 221\ 962\ 380\ 720, -569\ 936\ 821\ 113\ 563\ 493\ 509, -472\ 715\ 493\ 453\ 327\ 032)$$.
+Those are $$(1, 1, 1)$$ and 
+
+$$
+\begin{align*}
+x &= 569\ 936\ 821\ 221\ 962\ 380\ 720,\\
+y &= -569\ 936\ 821\ 113\ 563\ 493\ 509\\
+z &=  -472\ 715\ 493\ 453\ 327\ 032.
+\end{align*}
+$$
+
 The second triple is somewhat larger than the first one and was quite hard to find, a [Numberphile video][numberphile] was made in celebration of finding this number.
 This problem is referred to as the problem of [sums of three cubes][three cubes].
 
