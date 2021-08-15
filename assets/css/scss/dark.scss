@@ -1,0 +1,223 @@
+@import 'variables';
+
+a, a:link, a:visited, a:hover, a:focus, a:active{
+  color: $style-green;
+}
+
+body {
+  color: $body-color;
+  background-color: #fbfbfb;
+}
+
+h2 {
+  color: $dark;
+}
+
+blockquote {
+  border-left: 5px solid $style-red;
+  color: #ada8a8;
+}
+
+summary::marker {
+  color: $style-red;
+}
+
+table {
+  border: 1px solid #aaa;
+  background-color: #eee;
+}
+table td, table.blueTable th {
+  border: 1px solid #aaa;
+}
+table tr:nth-child(even) {
+  background: #adbecc;
+}
+table thead {
+  background: #a9c4d1;
+  background: linear-gradient(to bottom, #bed3dc 0%, #b1cad5 66%, #A9C4D1 100%);
+  border-bottom: 1px solid #8c8c8c;
+}
+table thead th {
+  color: #fff;
+  border-left: 1px solid #d0e4f5;
+}
+
+table tfoot {
+  color: #fff;
+  background: #d0e4f5;
+  background: linear-gradient(to bottom, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+  border-top: 2px solid #444;
+}
+
+.post, .article-page {
+  background-color: #fff;
+}
+
+::-moz-selection {
+  background: rgba(38, 57, 89, 0.8);
+  color: $white;
+}
+
+::selection {
+  background: rgba(38, 57, 89, 0.8);
+  color: $white;
+}
+
+/* Media colors */
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .sidebar {
+    background-color: #ffffff;
+    box-shadow: 0 1px 1px 0 rgba(31, 35, 46, .15);
+  }
+}
+ 
+ 
+ /* Environments colors */ 
+ .definition {
+    color: $style-blue;
+  }
+
+.example {
+    color: $style-yellow;
+}
+
+.lemma {
+    color: $style-red;
+}
+
+.theorem {
+    color: $style-red;
+}
+
+.keyword-definition {
+    color: $style-blue
+}
+
+.sidebar {
+    background-color: $white;
+  }
+.about {
+  .cover-author-image {
+    background-color: $dark;
+  }
+  .author-name {
+    &::after {
+      background-color: $body-color;
+    }
+  }
+}
+
+/* Home page colors */
+.contact {
+  .contact-title {
+    color: $dark;
+    &::before {
+      background-color: $body-color;
+    }
+    &::after {
+      background-color: $body-color;
+    }
+  }
+  ul {
+    li {
+      a {
+        color: $body-color;
+        &:hover {
+          color: $dark;
+        }
+      }
+    }
+  }
+}
+
+.post {
+  box-shadow: 0 1px 1px 0 rgba(31, 35, 46, .15);
+  &:hover {
+    box-shadow: 0 15px 45px -10px rgba(10, 16, 34, .2);
+  }
+
+  .post-content {
+    .post-title {
+      a {
+        color: $style-red;
+      }
+    }
+  }
+}
+
+a.older-posts, a.newer-posts {
+  color: $body-color;
+}
+
+/* Post page colors */
+  
+.header-page {
+  .page-title {
+    color: $style-red
+  }
+  .page-date {
+    color: $dark-gray;
+  }
+}
+
+.page-cover-image {
+  background-color: $lightgray;
+  figcaption {
+    color: rgba(255, 255, 255, 0.7);
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.page-footer {
+  border-bottom: 1px solid $dark-gray;
+  .page-share {
+    a {
+      background-color: $lightgray;
+      border: 1px solid $gray;
+      color: $dark-blue;
+      &:hover {
+        background-color: $gray;
+      }
+    }
+  }
+  .page-tag {
+    a {
+      color: $dark-blue;
+      border: 1px solid $dark-blue;
+    }
+  }
+}
+
+/* Tag styling */
+.blog-tags {
+    background-color: $white;
+    h1 {
+      color: $dark-blue;
+    }
+    h2 {
+      color: $dark-blue;
+    }
+  }
+  
+  .tags {
+    li {
+      a {
+        color: $dark-blue;
+        border: 1px solid $gray;
+        background-color: $lightgray;
+        &:hover {
+          background-color: $gray;
+        }
+      }
+    }
+  }
+  
+  .tag-list {
+    span {
+      a {
+        color: $dark-blue;
+      }
+    }
+  }
+  
