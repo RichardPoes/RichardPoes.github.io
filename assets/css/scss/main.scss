@@ -59,11 +59,40 @@ pre {
     word-break: break-all;
   }
 }
-
+ /* Summary section */
 summary {
+  display: block;
+  padding-left: 2.2rem;
+  position: relative;
   cursor: pointer;
 }
 
+summary:before {
+  content: '';
+  border-width: .4rem;
+  border-style: solid;
+  position: absolute;
+  top: .4rem;
+  left: 1rem;
+  transform: rotate(0);
+  transform-origin: .2rem 50%;
+  transition: .25s transform ease;
+}
+
+details[open] > summary:before {
+  transform: rotate(90deg);
+}
+
+details summary::-webkit-details-marker {
+  display:none;
+}
+
+details {
+  border-radius: 25px;
+  padding: 20px;
+}
+
+/* Table section */
 table {
   width: 100%;
   text-align: left;

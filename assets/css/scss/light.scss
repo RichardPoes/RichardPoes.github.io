@@ -1,25 +1,54 @@
-@import 'variables';
+$body-color: #515151;
+$white: #ffffff;
+$lightgray: #fafafa;
+$gray: #ecf0f1;
+$dark-gray: #a0a0a0;
+$dark-blue: #263959;
+$dark: #2d2d2d;
+$darkest: #1e1e1e;
+
+$normal-text-color: $body-color;
+$special-text-color: #ada8a8;
+$selection-background: rgba(38, 57, 89, 0.8);
+$selection-foreground: $white;
+$shadow-color: rgba(38, 57, 89, 0.6);
+$text-shadow: $shadow-color;
+$shadow-hover: rgba(38, 57, 89, 0.4);
+$body-background: #f0f0f0;
+$content-background: #fff;
+
+
+$style-red: #830300;
+$style-blue: #001462;
+$style-yellow: #ECA934;
+$style-green: #005C3C;
+$style-purple: #740154;
 
 a, a:link, a:visited, a:hover, a:focus, a:active{
   color: $style-green;
 }
 
 body {
-  color: $body-color;
-  background-color: #fbfbfb;
+  color: $normal-text-color;
+  background-color: $body-background;
 }
 
 h2 {
-  color: $dark;
+  color: $special-text-color;
 }
 
 blockquote {
   border-left: 5px solid $style-red;
-  color: #ada8a8;
+  color: $special-text-color;
 }
 
-summary::marker {
-  color: $style-red;
+summary:before {
+    border-color: transparent transparent transparent $style-red;
+}
+
+details {
+    background: $gray;
+    border: 2px solid $body-color;
 }
 
 table {
@@ -29,6 +58,7 @@ table {
 table td, table.blueTable th {
   border: 1px solid #aaa;
 }
+
 table tr:nth-child(even) {
   background: #adbecc;
 }
@@ -50,25 +80,25 @@ table tfoot {
 }
 
 .post, .article-page {
-  background-color: #fff;
+  background-color: $content-background;
 }
 
 ::-moz-selection {
-  background: rgba(38, 57, 89, 0.8);
-  color: $white;
+  background: $selection-background;
+  color: $selection-foreground;
 }
 
 ::selection {
-  background: rgba(38, 57, 89, 0.8);
-  color: $white;
+  background: $selection-background;
+  color: $selection-foreground;
 }
 
 /* Media colors */
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
   .sidebar {
-    background-color: #ffffff;
-    box-shadow: 0 1px 1px 0 rgba(31, 35, 46, .15);
+    background-color: $content-background;
+    box-shadow: 0 1px 1px 0 $shadow-color;
   }
 }
  
@@ -95,13 +125,14 @@ table tfoot {
 }
 
 .sidebar {
-    background-color: $white;
+    background-color: $content-background;
   }
 .about {
   .cover-author-image {
     background-color: $dark;
   }
   .author-name {
+      color: $normal-text-color;
     &::after {
       background-color: $body-color;
     }
@@ -111,7 +142,7 @@ table tfoot {
 /* Home page colors */
 .contact {
   .contact-title {
-    color: $dark;
+    color: $normal-text-color;
     &::before {
       background-color: $body-color;
     }
@@ -124,7 +155,7 @@ table tfoot {
       a {
         color: $body-color;
         &:hover {
-          color: $dark;
+          color: $darkest;
         }
       }
     }
@@ -132,9 +163,9 @@ table tfoot {
 }
 
 .post {
-  box-shadow: 0 1px 1px 0 rgba(31, 35, 46, .15);
+  box-shadow: 0 1px 1px 0 $shadow-color;
   &:hover {
-    box-shadow: 0 15px 45px -10px rgba(10, 16, 34, .2);
+    box-shadow: 0 15px 45px -10px $shadow-hover;
   }
 
   .post-content {
@@ -165,7 +196,7 @@ a.older-posts, a.newer-posts {
   background-color: $lightgray;
   figcaption {
     color: rgba(255, 255, 255, 0.7);
-    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 1px 5px $text-shadow;
   }
 }
 
@@ -183,29 +214,29 @@ a.older-posts, a.newer-posts {
   }
   .page-tag {
     a {
-      color: $dark-blue;
-      border: 1px solid $dark-blue;
+      color: $style-blue;
+      border: 1px solid $style-blue;
     }
   }
 }
 
-/* Tag styling */
+/* Tag page styling */
 .blog-tags {
-    background-color: $white;
+    background-color: $content-background;
     h1 {
-      color: $dark-blue;
+      color: $style-red;
     }
     h2 {
-      color: $dark-blue;
+      color: $normal-text-color;
     }
   }
   
   .tags {
     li {
       a {
-        color: $dark-blue;
+        color: $normal-text-color;
         border: 1px solid $gray;
-        background-color: $lightgray;
+        background-color: $body-background;
         &:hover {
           background-color: $gray;
         }
@@ -216,7 +247,7 @@ a.older-posts, a.newer-posts {
   .tag-list {
     span {
       a {
-        color: $dark-blue;
+        color: $style-green;
       }
     }
   }
