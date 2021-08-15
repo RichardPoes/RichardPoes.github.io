@@ -10,6 +10,10 @@ html {
   line-height: 1.5;
 }
 
+a, a:link, a:visited, a:hover, a:focus, a:active{
+  color: $style-green;
+}
+
 body {
   font-family: 'Lato', sans-serif;
   color: $body-color;
@@ -21,6 +25,10 @@ body {
 
 h1 {
   font-weight: 400;
+}
+
+h2 {
+  color: $dark;
 }
 
 img {

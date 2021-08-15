@@ -765,6 +765,10 @@ html {
   line-height: 1.5;
 }
 
+a, a:link, a:visited, a:hover, a:focus, a:active {
+  color: #005C3C;
+}
+
 body {
   font-family: "Lato", sans-serif;
   color: #515151;
@@ -776,6 +780,11 @@ body {
 
 h1 {
   font-weight: 400;
+  color: #001462;
+}
+
+h2 {
+  color: #333030;
 }
 
 img {
@@ -798,7 +807,7 @@ blockquote {
   padding-left: 1.1rem;
   margin-left: 1rem;
   font-style: italic;
-  color: #ada8a8;
+  color: #515151;
 }
 
 pre {
