@@ -1,0 +1,254 @@
+$body-color: #515151;
+$white: #ffffff;
+$lightgray: #fafafa;
+$gray: #ecf0f1;
+$dark-gray: #a0a0a0;
+$dark-blue: #263959;
+$dark: #2d2d2d;
+$darkest: #1e1e1e;
+
+$normal-text-color: $body-color;
+$special-text-color: #ada8a8;
+$selection-background: rgba(38, 57, 89, 0.8);
+$selection-foreground: $white;
+$shadow-color: rgba(38, 57, 89, 0.6);
+$text-shadow: $shadow-color;
+$shadow-hover: rgba(38, 57, 89, 0.4);
+$body-background: #f0f0f0;
+$content-background: #fff;
+
+
+$style-red: #830300;
+$style-blue: #001462;
+$style-yellow: #ECA934;
+$style-green: #005C3C;
+$style-purple: #740154;
+
+a, a:link, a:visited, a:hover, a:focus, a:active{
+  color: $style-green;
+}
+
+body {
+  color: $normal-text-color;
+  background-color: $body-background;
+}
+
+h2 {
+  color: $special-text-color;
+}
+
+blockquote {
+  border-left: 5px solid $style-red;
+  color: $special-text-color;
+}
+
+summary:before {
+    border-color: transparent transparent transparent $style-red;
+}
+
+details {
+    background: $gray;
+    border: 2px solid $body-color;
+}
+
+table {
+  border: 1px solid #aaa;
+  background-color: #eee;
+}
+table td, table.blueTable th {
+  border: 1px solid #aaa;
+}
+
+table tr:nth-child(even) {
+  background: #adbecc;
+}
+table thead {
+  background: #a9c4d1;
+  background: linear-gradient(to bottom, #bed3dc 0%, #b1cad5 66%, #A9C4D1 100%);
+  border-bottom: 1px solid #8c8c8c;
+}
+table thead th {
+  color: #fff;
+  border-left: 1px solid #d0e4f5;
+}
+
+table tfoot {
+  color: #fff;
+  background: #d0e4f5;
+  background: linear-gradient(to bottom, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+  border-top: 2px solid #444;
+}
+
+.post, .article-page {
+  background-color: $content-background;
+}
+
+::-moz-selection {
+  background: $selection-background;
+  color: $selection-foreground;
+}
+
+::selection {
+  background: $selection-background;
+  color: $selection-foreground;
+}
+
+/* Media colors */
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .sidebar {
+    background-color: $content-background;
+    box-shadow: 0 1px 1px 0 $shadow-color;
+  }
+}
+ 
+ 
+ /* Environments colors */ 
+ .definition {
+    color: $style-blue;
+  }
+
+.example {
+    color: $style-yellow;
+}
+
+.lemma {
+    color: $style-red;
+}
+
+.theorem {
+    color: $style-red;
+}
+
+.keyword-definition {
+    color: $style-blue
+}
+
+.sidebar {
+    background-color: $content-background;
+  }
+.about {
+  .cover-author-image {
+    background-color: $dark;
+  }
+  .author-name {
+      color: $normal-text-color;
+    &::after {
+      background-color: $body-color;
+    }
+  }
+}
+
+/* Home page colors */
+.contact {
+  .contact-title {
+    color: $normal-text-color;
+    &::before {
+      background-color: $body-color;
+    }
+    &::after {
+      background-color: $body-color;
+    }
+  }
+  ul {
+    li {
+      a {
+        color: $body-color;
+        &:hover {
+          color: $darkest;
+        }
+      }
+    }
+  }
+}
+
+.post {
+  box-shadow: 0 1px 1px 0 $shadow-color;
+  &:hover {
+    box-shadow: 0 15px 45px -10px $shadow-hover;
+  }
+
+  .post-content {
+    .post-title {
+      a {
+        color: $style-red;
+      }
+    }
+  }
+}
+
+a.older-posts, a.newer-posts {
+  color: $body-color;
+}
+
+/* Post page colors */
+  
+.header-page {
+  .page-title {
+    color: $style-red
+  }
+  .page-date {
+    color: $dark-gray;
+  }
+}
+
+.page-cover-image {
+  background-color: $lightgray;
+  figcaption {
+    color: rgba(255, 255, 255, 0.7);
+    text-shadow: 0 1px 5px $text-shadow;
+  }
+}
+
+.page-footer {
+  border-bottom: 1px solid $dark-gray;
+  .page-share {
+    a {
+      background-color: $lightgray;
+      border: 1px solid $gray;
+      color: $dark-blue;
+      &:hover {
+        background-color: $gray;
+      }
+    }
+  }
+  .page-tag {
+    a {
+      color: $style-blue;
+      border: 1px solid $style-blue;
+    }
+  }
+}
+
+/* Tag page styling */
+.blog-tags {
+    background-color: $content-background;
+    h1 {
+      color: $style-red;
+    }
+    h2 {
+      color: $normal-text-color;
+    }
+  }
+  
+  .tags {
+    li {
+      a {
+        color: $normal-text-color;
+        border: 1px solid $gray;
+        background-color: $body-background;
+        &:hover {
+          background-color: $gray;
+        }
+      }
+    }
+  }
+  
+  .tag-list {
+    span {
+      a {
+        color: $style-green;
+      }
+    }
+  }
+  

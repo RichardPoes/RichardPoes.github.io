@@ -1,0 +1,201 @@
+a, a:link, a:visited, a:hover, a:focus, a:active {
+  color: #3CB371;
+}
+
+body {
+  color: #e7e8eb;
+  background-color: #1e1e1e;
+}
+
+h2 {
+  color: #ada8a8;
+}
+
+blockquote {
+  border-left: 5px solid #F08080;
+  color: #ada8a8;
+}
+
+summary:before {
+  border-color: transparent transparent transparent #F08080;
+}
+
+details {
+  background: #505050;
+  border: 2px solid #1e1e1e;
+}
+
+table {
+  border: 1px solid #aaa;
+  background-color: #eee;
+}
+
+table td, table.blueTable th {
+  border: 1px solid #aaa;
+}
+
+table tr:nth-child(even) {
+  background: #adbecc;
+}
+
+table thead {
+  background: #a9c4d1;
+  background: linear-gradient(to bottom, #bed3dc 0%, #b1cad5 66%, #A9C4D1 100%);
+  border-bottom: 1px solid #8c8c8c;
+}
+
+table thead th {
+  color: #fff;
+  border-left: 1px solid #d0e4f5;
+}
+
+table tfoot {
+  color: #fff;
+  background: #d0e4f5;
+  background: linear-gradient(to bottom, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+  border-top: 2px solid #444;
+}
+
+.post, .article-page {
+  background-color: #2d2d2d;
+}
+
+::-moz-selection {
+  background: rgba(38, 57, 89, 0.8);
+  color: #ffffff;
+}
+
+::selection {
+  background: rgba(38, 57, 89, 0.8);
+  color: #ffffff;
+}
+
+/* Media colors */
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    background-color: #2d2d2d;
+    box-shadow: 0 1px 1px 0 rgba(104, 104, 104, 0.8);
+  }
+}
+/* Environments colors */
+.definition {
+  color: #6495ED;
+}
+
+.example {
+  color: #ECA934;
+}
+
+.lemma {
+  color: #F08080;
+}
+
+.theorem {
+  color: #F08080;
+}
+
+.keyword-definition {
+  color: #6495ED;
+}
+
+.sidebar {
+  background-color: #2d2d2d;
+}
+
+.about .cover-author-image {
+  background-color: #ffffff;
+}
+.about .author-name {
+  color: #e7e8eb;
+}
+.about .author-name::after {
+  background-color: #515151;
+}
+
+/* Home page colors */
+.contact .contact-title {
+  color: #e7e8eb;
+}
+.contact .contact-title::before {
+  background-color: #515151;
+}
+.contact .contact-title::after {
+  background-color: #515151;
+}
+.contact ul li a {
+  color: #515151;
+}
+.contact ul li a:hover {
+  color: #ffffff;
+}
+
+.post {
+  box-shadow: 0 1px 1px 0 rgba(104, 104, 104, 0.8);
+}
+.post:hover {
+  box-shadow: 0 15px 45px -10px rgba(104, 104, 104, 0.8);
+}
+.post .post-content .post-title a {
+  color: #F08080;
+}
+
+a.older-posts, a.newer-posts {
+  color: #515151;
+}
+
+/* Post page colors */
+.header-page .page-title {
+  color: #F08080;
+}
+.header-page .page-date {
+  color: #a0a0a0;
+}
+
+.page-cover-image {
+  background-color: #fafafa;
+}
+.page-cover-image figcaption {
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+.page-footer {
+  border-bottom: 1px solid #a0a0a0;
+}
+.page-footer .page-share a {
+  background-color: #fafafa;
+  border: 1px solid #ecf0f1;
+  color: #263959;
+}
+.page-footer .page-share a:hover {
+  background-color: #ecf0f1;
+}
+.page-footer .page-tag a {
+  color: #6495ED;
+  border: 1px solid #6495ED;
+}
+
+/* Tag page styling */
+.blog-tags {
+  background-color: #2d2d2d;
+}
+.blog-tags h1 {
+  color: #F08080;
+}
+.blog-tags h2 {
+  color: #e7e8eb;
+}
+
+.tags li a {
+  color: #e7e8eb;
+  border: 1px solid #ecf0f1;
+  background-color: #1e1e1e;
+}
+.tags li a:hover {
+  background-color: #a0a0a0;
+}
+
+.tag-list span a {
+  color: #3CB371;
+}

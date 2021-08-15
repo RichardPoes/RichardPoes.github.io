@@ -1,6 +1,15 @@
 <head>
 	<meta charset="utf-8">
 	<title>{% if page.title %}{{page.title}} - {{site.title}}{% else %}{{site.title}}{% endif %}</title>
+  <script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').media === 'not all') {
+      document.documentElement.style.display = 'none';
+      document.head.insertAdjacentHTML(
+        'beforeend',
+        '<link rel="stylesheet" href="/light.css" onload="document.documentElement.style.display = \'\'">',
+      );
+    }
+  </script>
   {%- if page.use-math -%}
     <script type="text/javascript">
       window.MathJax = {
@@ -14,12 +23,6 @@
           tags: 'ams'
         }
       };
-      MathJax.Hub.Config({
-      tex2jax: {inlineMath: [['$','$']]},
-      "HTML-CSS": { linebreaks: { automatic: true } },
-      CommonHTML: { linebreaks: { automatic: true } },
-      SVG: { linebreaks: { automatic: true } }
-    });
     </script>
     <script type="text/javascript" async
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
@@ -107,5 +110,7 @@
 	<!-- Font Awesome -->
 	<link rel="stylesheet" href="{{ "/assets/fonts/font-awesome/css/font-awesome.min.css" | prepend: site.baseurl }}">
 	<!-- Styles -->
+  <link rel="stylesheet" href="/assets/css/dark.css" media="(prefers-color-scheme: dark)" />
+  <link rel="stylesheet" href="/assets/css/light.css" media="(prefers-color-scheme: light)"/>
 	<link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
 </head>

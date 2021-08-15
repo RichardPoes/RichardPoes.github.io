@@ -1,0 +1,201 @@
+a, a:link, a:visited, a:hover, a:focus, a:active {
+  color: #005C3C;
+}
+
+body {
+  color: #515151;
+  background-color: #f0f0f0;
+}
+
+h2 {
+  color: #ada8a8;
+}
+
+blockquote {
+  border-left: 5px solid #830300;
+  color: #ada8a8;
+}
+
+summary:before {
+  border-color: transparent transparent transparent #830300;
+}
+
+details {
+  background: #ecf0f1;
+  border: 2px solid #515151;
+}
+
+table {
+  border: 1px solid #aaa;
+  background-color: #eee;
+}
+
+table td, table.blueTable th {
+  border: 1px solid #aaa;
+}
+
+table tr:nth-child(even) {
+  background: #adbecc;
+}
+
+table thead {
+  background: #a9c4d1;
+  background: linear-gradient(to bottom, #bed3dc 0%, #b1cad5 66%, #A9C4D1 100%);
+  border-bottom: 1px solid #8c8c8c;
+}
+
+table thead th {
+  color: #fff;
+  border-left: 1px solid #d0e4f5;
+}
+
+table tfoot {
+  color: #fff;
+  background: #d0e4f5;
+  background: linear-gradient(to bottom, #dcebf7 0%, #d4e6f6 66%, #D0E4F5 100%);
+  border-top: 2px solid #444;
+}
+
+.post, .article-page {
+  background-color: #fff;
+}
+
+::-moz-selection {
+  background: rgba(38, 57, 89, 0.8);
+  color: #ffffff;
+}
+
+::selection {
+  background: rgba(38, 57, 89, 0.8);
+  color: #ffffff;
+}
+
+/* Media colors */
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgba(38, 57, 89, 0.6);
+  }
+}
+/* Environments colors */
+.definition {
+  color: #001462;
+}
+
+.example {
+  color: #ECA934;
+}
+
+.lemma {
+  color: #830300;
+}
+
+.theorem {
+  color: #830300;
+}
+
+.keyword-definition {
+  color: #001462;
+}
+
+.sidebar {
+  background-color: #fff;
+}
+
+.about .cover-author-image {
+  background-color: #2d2d2d;
+}
+.about .author-name {
+  color: #515151;
+}
+.about .author-name::after {
+  background-color: #515151;
+}
+
+/* Home page colors */
+.contact .contact-title {
+  color: #515151;
+}
+.contact .contact-title::before {
+  background-color: #515151;
+}
+.contact .contact-title::after {
+  background-color: #515151;
+}
+.contact ul li a {
+  color: #515151;
+}
+.contact ul li a:hover {
+  color: #1e1e1e;
+}
+
+.post {
+  box-shadow: 0 1px 1px 0 rgba(38, 57, 89, 0.6);
+}
+.post:hover {
+  box-shadow: 0 15px 45px -10px rgba(38, 57, 89, 0.4);
+}
+.post .post-content .post-title a {
+  color: #830300;
+}
+
+a.older-posts, a.newer-posts {
+  color: #515151;
+}
+
+/* Post page colors */
+.header-page .page-title {
+  color: #830300;
+}
+.header-page .page-date {
+  color: #a0a0a0;
+}
+
+.page-cover-image {
+  background-color: #fafafa;
+}
+.page-cover-image figcaption {
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: 0 1px 5px rgba(38, 57, 89, 0.6);
+}
+
+.page-footer {
+  border-bottom: 1px solid #a0a0a0;
+}
+.page-footer .page-share a {
+  background-color: #fafafa;
+  border: 1px solid #ecf0f1;
+  color: #263959;
+}
+.page-footer .page-share a:hover {
+  background-color: #ecf0f1;
+}
+.page-footer .page-tag a {
+  color: #001462;
+  border: 1px solid #001462;
+}
+
+/* Tag page styling */
+.blog-tags {
+  background-color: #fff;
+}
+.blog-tags h1 {
+  color: #830300;
+}
+.blog-tags h2 {
+  color: #515151;
+}
+
+.tags li a {
+  color: #515151;
+  border: 1px solid #ecf0f1;
+  background-color: #f0f0f0;
+}
+.tags li a:hover {
+  background-color: #ecf0f1;
+}
+
+.tag-list span a {
+  color: #005C3C;
+}
