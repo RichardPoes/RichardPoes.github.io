@@ -18,7 +18,7 @@ First I followed the tutorial on [GitHub Pages](https://guides.github.com/featur
 After some playing around I found [this template](https://github.com/artemsheludko/flexible-jekyll "GitHub Pages Template").
 I cleared my whole repository and filled it with the unzipped files of the aforementioned template. It is then important to set 
 ``` yaml
-baseurl: "" # the subpath of your site, e.g. /blog```
+baseurl: "" # the subpath of your site, e.g. /blog
 ```
 Because I did not have this subpath by default; this had to be directly on [richardpoes.github.io](richardpoes.github.io), for now.
 The site was showing the same content as the template now, so the installation was done.

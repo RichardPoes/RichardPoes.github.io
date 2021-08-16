@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Consolasligaturizedv2';
+    src:url('../fonts/Consolasligaturizedv2.woff') format('woff'),
+          url('../fonts/Consolasligaturizedv2.woff2') format('woff2'),
+          url('../fonts/Consolasligaturizedv2.svg#Consolasligaturizedv2') format('svg'),
+          url('../fonts/Consolasligaturizedv2.eot'),
+          url('../fonts/Consolasligaturizedv2.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/Consolasligaturizedv2.ttf') format('truetype');
+  
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
