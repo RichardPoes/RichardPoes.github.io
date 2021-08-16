@@ -47,7 +47,7 @@ summary:before {
 }
 
 details {
-    background: $gray;
+    background: $lightgray;
     border: 2px solid $body-color;
 }
 
@@ -252,3 +252,7 @@ a.older-posts, a.newer-posts {
     }
   }
   
+ /* Code */
+ .highlighter-rouge{
+   background-color: $darkest;
+ }

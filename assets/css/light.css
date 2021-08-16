@@ -21,7 +21,7 @@ summary:before {
 }
 
 details {
-  background: #ecf0f1;
+  background: #fafafa;
   border: 2px solid #515151;
 }
 
@@ -198,4 +198,9 @@ a.older-posts, a.newer-posts {
 
 .tag-list span a {
   color: #005C3C;
+}
+
+/* Code */
+.highlighter-rouge {
+  background-color: #1e1e1e;
 }

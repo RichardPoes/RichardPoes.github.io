@@ -43,7 +43,6 @@ blockquote {
 }
 
 pre {
-  padding: 1rem 2rem;
   overflow: auto;
   white-space: pre-wrap;
   word-wrap: break-word;
@@ -92,6 +91,15 @@ details {
   padding: 20px;
 }
 
+details[open] summary ~ * {
+  animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+  0%    {opacity: 0; transform: translateY(-10px)}
+  100%  {opacity: 1; transform: translateY(0)}
+}
+
 /* Table section */
 table {
   width: 100%;
@@ -133,6 +141,15 @@ table tfoot td {
 
 .clearfix::after {
   clear: both;
+}
+
+/* Code formatting */
+.lineno {
+  text-align: right;
+}
+
+table.rouge-table td.gutter {
+  padding-right: .5rem;
 }
 
 
