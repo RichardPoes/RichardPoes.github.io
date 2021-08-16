@@ -9,8 +9,28 @@ $vscode-yellow: #d7ba7d;
 $vscode-red: #f44747;
 
 /* TODO: https://frankindev.com/2017/03/18/syntax-highlight-with-rouge-in-jekyll/ */
-.highlight {background-color: $code-background; border-radius: 3px; margin: 0;}
-.highlighter-rouge {color: $vscode-white; font-weight: 400; border: 1px solid #607D8B; border-radius: 3px; padding: 0.1rem 0.1rem;}
+table.rouge-table {
+    border: none;
+}
+
+table.rouge-table td.rouge-gutter {
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    border-right: 1px solid $vscode-white;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    width: 0px;
+  }
+
+table.rouge-table td.rouge-code {
+    border: none;
+    padding-left: .5rem;
+}
+
+code table {background-color: $code-background;}
+.highlight {background-color: $code-background; margin: 0;}
+.highlighter-rouge {color: $vscode-white; background-color: $code-background; font-weight: 400; border-radius: 3px; padding: 0.1rem 0.1rem;}
 .highlight .hll { background-color: #ffc; }
 .highlight .c { color: #999; } /* Comment */
 .highlight .err { color: #a00; background-color: #faa; } /* Error */

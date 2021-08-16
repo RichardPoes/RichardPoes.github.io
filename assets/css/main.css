@@ -83,7 +83,7 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
+  font-family: "Consolasligaturizedv2", monospace, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -433,16 +433,38 @@ template {
 }
 
 /* TODO: https://frankindev.com/2017/03/18/syntax-highlight-with-rouge-in-jekyll/ */
+table.rouge-table {
+  border: none;
+}
+
+table.rouge-table td.rouge-gutter {
+  border-top: none;
+  border-left: none;
+  border-bottom: none;
+  border-right: 1px solid #d4d4d4;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  width: 0px;
+}
+
+table.rouge-table td.rouge-code {
+  border: none;
+  padding-left: 0.5rem;
+}
+
+code table {
+  background-color: #1e1e1e;
+}
+
 .highlight {
   background-color: #1e1e1e;
-  border-radius: 3px;
   margin: 0;
 }
 
 .highlighter-rouge {
   color: #d4d4d4;
+  background-color: #1e1e1e;
   font-weight: 400;
-  border: 1px solid #607D8B;
   border-radius: 3px;
   padding: 0.1rem 0.1rem;
 }
@@ -799,7 +821,6 @@ blockquote {
 }
 
 pre {
-  padding: 1rem 2rem;
   overflow: auto;
   white-space: pre-wrap;
   word-wrap: break-word;
@@ -907,6 +928,15 @@ table tfoot td {
 
 .clearfix::after {
   clear: both;
+}
+
+/* Code formatting */
+.lineno {
+  text-align: right;
+}
+
+table.rouge-table td.gutter {
+  padding-right: 0.5rem;
 }
 
 /* - - - - - - - - - - Home Page Styles - - - - - - - - - - */

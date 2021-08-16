@@ -16,8 +16,20 @@ social-github: RichardPoes # add your Github handle
 social-linkedin: richard-d-9a9239143 # add your Linkedin handle
 social-email: richard.poes@outlook.com # add your Email address
 
-# Build Settings
+# Code highlighting settings
 highlighter: rouge
+kramdown:
+  syntax_highlighter_opts: 
+    default_lang: csharp
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+
+
+# Plugin Settings
 plugins:
   - jekyll-sitemap
   - jekyll-paginate

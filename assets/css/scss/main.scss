@@ -43,7 +43,6 @@ blockquote {
 }
 
 pre {
-  padding: 1rem 2rem;
   overflow: auto;
   white-space: pre-wrap;
   word-wrap: break-word;
@@ -142,6 +141,15 @@ table tfoot td {
 
 .clearfix::after {
   clear: both;
+}
+
+/* Code formatting */
+.lineno {
+  text-align: right;
+}
+
+table.rouge-table td.gutter {
+  padding-right: .5rem;
 }
 
 
