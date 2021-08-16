@@ -61,6 +61,10 @@
   display: none;
 }
 
+.wrap-content img {
+  padding: 6px;
+}
+
 }
 
 /* Extra Small Devices, Phones */
@@ -88,4 +92,9 @@
       }
     }
   }
+
+  .wrap-content img {
+    padding: 2px;
+  }
+
 }

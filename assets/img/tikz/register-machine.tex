@@ -1,0 +1,38 @@
+
+\documentclass[crop, tikz, convert={density=300,size=1080x800,outext=.png}]{standalone}
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}
+    \draw (0, 0) rectangle (2, 2);
+    \node at (1,1) {$1$};
+    \node at (1,-0.5) {$R_1$};
+
+    \draw (2, 0) rectangle (4, 2);
+    \node at (3,1) {$3$};
+    \node at (3,-0.5) {$R_2$};
+
+    \draw (4, 0) rectangle (6, 2);
+    \node at (5,1) {$3$};
+    \node at (5,-0.5) {$R_3$};
+
+    \draw (6, 0) rectangle (8, 2);
+    \node at (7,1) {$7$};
+    \node at (7,-0.5) {$R_4$};
+
+    \draw (8, 0) rectangle (10, 2);
+    \node at (9,1) {$\dots$};
+    \node at (9,-0.5) {$\dots$};
+
+    \draw (10, 0) rectangle (12, 2);
+    \node at (11,1) {$r_i$};
+    \node at (11,-0.5) {$R_i$};
+
+    \draw (12, 0) rectangle (14, 2);
+    \node at (13,1) {$\dots$};
+    \node at (13,-0.5) {$\dots$};
+
+    \draw (14, 0) rectangle (16, 2);
+    \node at (15,1) {$r_n$};
+    \node at (15,-0.5) {$R_n$};
+\end{tikzpicture}
+\end{document}

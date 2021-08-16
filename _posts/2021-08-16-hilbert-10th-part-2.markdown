@@ -1,32 +1,40 @@
 ---
 layout: post
-title: Hilbert's 10th Problem - Part 1
-html-title: Hilbert's 10<sup>th</sup> Problem - Part 1
-date: 2021-08-14 19:12:20 +0300
-description: An introduction to Hilbert's 10th Problem and Diophantine equations.
-img: Blog2.jpg # Add image post (optional)
+title: Hilbert's 10th Problem - Part 2
+html-title: Hilbert's 10<sup>th</sup> Problem - Part 2
+date: 2021-08-16 19:12:20 +0300
+description: What is an algorithm mathematically? And why are there incomputable problems?
+img: Blog3.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
-tags: [Mathematics, Hilbert's 10th, Diophantine]
+tags: [Mathematics, Hilbert's 10th, Computability Theory]
 use-math: true
 ---
 # Introduction
-I will be posting a series of posts concerning Hilbert's 10<sup>th</sup> Problem, or in short Hilbert's 10<sup>th</sup>.
-This was the topic of my Bachelor thesis and I think a wider audience should hear about the topic and its proof.
-My aim is to split this topic into three parts, where this part introduces you to Diophantine equations and why the question was posed.
-A second post will then introduce you to the fundamentals of computability theory and the last post will actually demonstrate how the final answer to Hilbert's 10<sup>th</sup> was reached.
+In the previous post we fiddled around a bit with Diophantine equations, to understand why they were hard.
+In the end it was told that an algorithm which _decides_ whether a given Diophantine equation has a solution, cannot exist.
+However, it was never clarified what an algorithm was.
+Even stronger, David Hilbert itself did not have a clear notion of an algorithm, hence the cumbersome formulation of his 10<sup>th</sup> problem.
+In this post we will therefore explore the realms of computability theory, with the main goal being to get some idea of what an algorithm is and why there are incomputable problems.
 
-## Problem statement
-One might wonder what is Hilbert's 10<sup>th</sup> Problem exactly.
-In 1900 famous Mathematician [Davild Hilbert][Hilbert] published a [list][23Problems] of 23 mathematical problems, a sort of 20<sup>th</sup> century equivalent of the [Millennium Problems][Milennium Problems].
-The 10<sup>th</sup> problem on that list was stated by Hilbert as follows.
-> Given a Diophantine equation with any number of unknown quantities and with rational integral numerical coefficients: To devises a process according to which it can be determined by a finite number of operations whether the equation is solvable in rational integers.
-{: title="Hilbert's statement of his 10<sup>th</sup> problem"}
-In 1900, no notion of _algorithm_ had been established yet, which explains the quite cumbersome combination of the words "a process" and "finite number of operations", where the word operations is never defined.
-In modern wording we could paraphrase the Diophantine problem as follows:
-> Construct an algorithm which takes as input an arbitrary Diophantine equation and outputs whether or not there exists a solution to this equation.
-{: title="Paraphrasing of Hilbert's 10<sup>th</sup> problem"}
-Note that two key concepts are necessary to understand: the notion of a Diophantine equation and the notion of an algorithm.
-The first will be explained in this post and the latter will be explained in Part 2.
+# Algorithms
+One might recall from the previous post that Hilbert's notion of an algorithm had at least something to do with "a process" and a "finite number of operations".
+Thus it is best to define such a process.
+This will be done using _register machines_.
+Those cannot be rigorously defined, but using the concept of them, we can then define what it means to be a _computation_.
+## Register Machines
+A <span class="keyword-definition">register machine</span> is basically a very simple computer and thus needs to exhibit two properties: possession of some sort of memory and ways to manipulate that memory.
+A register machine with $$n$$ registers (or memory cells) is able to store $$n$$ different natural numbers, a depiction of which is shown below.
+![Simple depiction of a register machine](../assets/img/tikz/register-machine.png){:.invert-when-dark}
+Thus register $$i$$ is denoted with $$R_i$$ and contains the value $$r_i \in \Naturals. $$
+Note that, whereas a normal computer memory cell can only contain values up to a certain upper bound, any register $$R_i$$ can contain an arbitrarily large integer $$r_i$$.
+
+To manipulate these memory cells we need a <span class="keyword-definition">program</span> $$P$$.
+A program $$P$$ is an ordered list consisting out of two different kind of <span class="keyword-definition">instructions</span> or <span class="keyword-definition">commands</span>.
+Each command has one of two shapes:
+1. $$r_i^+ \Rightarrow n,$$ which means: add 1 to $$r_i$$ and move to command $$n$$;
+2. $$r_i^- \Rightarrow n, m, $$ which means: if $$r_i > 0,$$ subtract 1 from $$r_i$$ and move to command $$n$$. If $$r_i = 0$$, meaning 1 cannot be subtracted, move to command $$m$$.
+
+Let us now dive into some examples.
 
 # Diophantine equations
 To see why this question is both interesting and hard let us explore some simple equations.

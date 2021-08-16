@@ -2,7 +2,7 @@
 layout: post
 title: Creating a math blog
 date: 2021-08-04 16:53:20 +0300
-description: Starting a (math) blog, how do you do this and what do you need to take into account? # Add post description (optional)
+description: Starting a (math) blog, how did I approach this?
 img: Blog1.jpg # Add image post (optional)
 fig-caption: # Add figcaption (optional)
 tags: [GitHub Pages, Computers, Blogs]

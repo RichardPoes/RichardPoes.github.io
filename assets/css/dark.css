@@ -353,6 +353,10 @@ details {
   border: 2px solid #1e1e1e;
 }
 
+img.invert-when-dark {
+  filter: invert(1);
+}
+
 table {
   border: 1px solid #aaa;
   background-color: #eee;

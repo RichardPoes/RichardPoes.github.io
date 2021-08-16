@@ -494,6 +494,10 @@ img + em {
   font-size: 14px;
 }
 
+.wrap-content img {
+  padding: 15px;
+}
+
 blockquote {
   padding-left: 1.1rem;
   margin-left: 1rem;
@@ -976,6 +980,10 @@ a.newer-posts:hover {
   .contact-title, .copyright {
     display: none;
   }
+
+  .wrap-content img {
+    padding: 6px;
+  }
 }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
@@ -1000,6 +1008,10 @@ a.newer-posts:hover {
   }
   .post .post-content .post-title a {
     font-size: 21px;
+  }
+
+  .wrap-content img {
+    padding: 2px;
   }
 }
 /* - - - - - - - - - - Math Environment Styles - - - - - - - - - - */

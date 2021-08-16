@@ -62,6 +62,10 @@ details {
     border: 2px solid $details-border;
 }
 
+img.invert-when-dark {
+  filter: invert(1);
+}
+
 table {
   border: 1px solid #aaa;
   background-color: #eee;
