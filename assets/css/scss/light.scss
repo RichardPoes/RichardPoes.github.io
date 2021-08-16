@@ -1,3 +1,5 @@
+@import 'light_syntax';
+
 $body-color: #515151;
 $white: #ffffff;
 $lightgray: #fafafa;
@@ -251,8 +253,3 @@ a.older-posts, a.newer-posts {
       }
     }
   }
-  
- /* Code */
- .highlighter-rouge{
-   background-color: $darkest;
- }

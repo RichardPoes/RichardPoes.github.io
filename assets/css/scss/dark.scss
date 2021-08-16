@@ -1,3 +1,5 @@
+@import 'dark_syntax';
+
 $body-color: #515151;
 $white: #ffffff;
 $lightgray: #fafafa;
@@ -8,6 +10,12 @@ $less-dark: #505050;
 $dark: #2d2d2d;
 $darkest: #1e1e1e;
 
+$style-red: #F08080;
+$style-blue: #6495ED;
+$style-yellow: #ECA934;
+$style-green:  	#3CB371;
+$style-purple: #BA55D3;
+
 $normal-text-color: #e7e8eb;
 $special-text-color: #ada8a8;
 $selection-background: rgba(38, 57, 89, 0.8);
@@ -15,21 +23,25 @@ $selection-foreground: $white;
 $shadow-color: rgba(104, 104, 104, 0.8);
 $text-shadow: $shadow-color;
 $shadow-hover: $shadow-color;
+$link-color: $style-green;
+$background-color: $darkest;
+$blockquote-border-color: $style-red;
+$details-background: $less-dark;
+$details-border: $darkest;
+$post-background-color: $dark;
+$sidebar-background-color: $dark;
+$author-image-background-color: $white;
 
 
-$style-red: #F08080;
-$style-blue: #6495ED;
-$style-yellow: #ECA934;
-$style-green:  	#3CB371;
-$style-purple: #BA55D3;
+
 
 a, a:link, a:visited, a:hover, a:focus, a:active{
-  color: $style-green;
+  color: $link-color;
 }
 
 body {
   color: $normal-text-color;
-  background-color: $darkest;
+  background-color: $background-color;
 }
 
 h2 {
@@ -37,17 +49,17 @@ h2 {
 }
 
 blockquote {
-  border-left: 5px solid $style-red;
+  border-left: 5px solid $blockquote-border-color;
   color: $special-text-color;
 }
 
 summary:before {
-    border-color: transparent transparent transparent $style-red;
+    border-color: transparent transparent transparent $blockquote-border-color;
 }
 
 details {
-    background: $less-dark;
-    border: 2px solid $darkest;
+    background: $details-background;
+    border: 2px solid $details-border;
 }
 
 table {
@@ -79,7 +91,7 @@ table tfoot {
 }
 
 .post, .article-page {
-  background-color: $dark;
+  background-color: $post-background-color;
 }
 
 ::-moz-selection {
@@ -96,7 +108,7 @@ table tfoot {
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
   .sidebar {
-    background-color: $dark;
+    background-color: $sidebar-background-color;
     box-shadow: 0 1px 1px 0 $shadow-color;
   }
 }
@@ -124,11 +136,11 @@ table tfoot {
 }
 
 .sidebar {
-    background-color: $dark;
+    background-color: $sidebar-background-color;
   }
 .about {
   .cover-author-image {
-    background-color: $white;
+    background-color: $author-image-background-color;
   }
   .author-name {
       color: $normal-text-color;
